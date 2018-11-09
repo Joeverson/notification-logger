@@ -1,7 +1,7 @@
 {
-  "name": "notification-logger",
+  "name": "notifications-logger",
   "version": "0.0.1",
-  "description": "",
+  "description": "The class for get the logs in systems and send for server api",
   "main": "index.js",
   "scripts": {
     "start": "node dist/NotificationLogger.js",
@@ -13,7 +13,7 @@
     "notification-logger",
     "monit"
   ],
-  "author": "Joerverson Santos",
+  "author": "Joerverson Santos <joerverson.santos@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
