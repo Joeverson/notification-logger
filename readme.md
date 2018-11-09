@@ -26,3 +26,13 @@ notifyLogger.monit('you logger')
 
 ```
 
+# structure information sent
+
+```
+POST htp://you-url<:port>/log/name-application
+
+{
+    created_at: YYYY-MM-DD HH:mm:ss,
+    log: "lorem ipsu"
+}
+```
