@@ -11,7 +11,8 @@ how instance the lib
 ```
 const notifyLogger = new NotificationLogger({
   applicationName: 'application name' ,
-  hostAPI: 'http://localhost:3000' 
+  version: '<version-app>'
+  hostAPI: 'http://localhost:3002' 
 })
 
 ```
@@ -22,7 +23,7 @@ const notifyLogger = new NotificationLogger({
 the principal method, him used by send messagens for api
 
 ```
-notifyLogger.monit('you logger')
+notifyLogger.monit(<'you logger'> or <{message: '', data: {}}>)
 
 ```
 
@@ -33,6 +34,6 @@ POST htp://you-url<:port>/log/name-application
 
 {
     created_at: YYYY-MM-DD HH:mm:ss,
-    log: "lorem ipsu"
+    data: "lorem ipsu"
 }
 ```

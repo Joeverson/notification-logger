@@ -6,7 +6,10 @@ export default class NotificationLogger {
     Object.assign(this, options)
 
     this.http = axios.create({
-      baseURL: options.hostAPI
+      baseURL: options.hostAPI,
+      params: {
+        version: this.version
+      }
     })
   }
 
@@ -15,10 +18,10 @@ export default class NotificationLogger {
    * 
    * @param {String} log 
    */
-  monit(log) {
+  monit(data) {
     this.send({
       created_at: moment().format('YYYY-MM-DD HH:mm:ss'),
-      log
+      data
     });
   }
 
