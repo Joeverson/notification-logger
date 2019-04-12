@@ -23,7 +23,7 @@ const notifyLogger = new NotificationLogger({
 the principal method, him used by send messagens for api
 
 ```
-notifyLogger.monit(<'you logger'> or <{message: '', data: {}}>)
+notifyLogger.monit('you message logger')
 
 ```
 
