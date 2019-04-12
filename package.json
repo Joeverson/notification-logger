@@ -1,6 +1,6 @@
 {
   "name": "notifications-logger",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The class for get the logs in systems and send for server api",
   "main": "index.js",
   "scripts": {
